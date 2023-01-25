@@ -101,13 +101,13 @@ PrintArray(array);
 for (int j = 0; j < array.GetLength(1); j++)
 {
     double sum = 0;
-    double sround = 0;
+    double sumround = 0;
     for (int i = 0; i < array.GetLength(0); i++)
     {
         sum += array[i, j];
-        sround = Math.Round (sum / array.GetLength(0),2);
+        sumround = Math.Round (sum / array.GetLength(0),2);
     }
-    Console.WriteLine($"Среднее арифметическое столбца {j+1} = {sround} ");
+    Console.WriteLine($"Среднее арифметическое столбца {j+1} = {sumround} ");
 }
 
 
